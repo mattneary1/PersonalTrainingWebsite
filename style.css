@@ -1,5 +1,46 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
 input {
     margin-right: 10px;
+}
+
+.accordion-button {
+    font-size: 17px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.accordion-item {
+    border: 1px solid #b1b1b1;
+}
+
+.accordion-item a {
+    color: #343a40;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(100);
+}
+
+.accordion-button:focus {
+    box-shadow: inherit;
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+#back-to-top {
+    color: #f8f9fa;
 }
 
 @media (min-width: 768px) {

@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">Matt Neary PT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -44,7 +44,7 @@
                     <h1>Build a <span class="text-info">Better You</span></h1>
                     <p class="lead my-4">Whether your goal is to lose weight, build muscle, or train for competitive sports, there is a plan for you.
                     </p>
-                    <button class="btn btn-info btn-lg">Get Started</button>
+                    <button class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Get Started</button>
                 </div>
                 <img class="img-fluid w-50 d-none d-md-block" src="img/biceps.svg" alt="">
             </div>
@@ -75,8 +75,9 @@
                                 <i class="fa-solid fa-dumbbell"></i>
                             </div>
                             <h3>Training</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, accusamus quae? Corporis quam accusantium inventore.</p>
-                            <a href="#" class="btn btn-info">Read More</a>
+                            <p>Not all training programs are created equal. The right training program is one that is tailored to your own goals and needs.</p>
+                            <a href="#learn-training" class="btn btn-info">
+                                <i class="fa-solid fa-circle-chevron-down"></i> Read More</a>
                         </div>
                     </div>
                 </div>
@@ -87,8 +88,9 @@
                                 <i class="fa-solid fa-utensils"></i>
                             </div>
                             <h3>Nutrition</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, accusamus quae? Corporis quam accusantium inventore.</p>
-                            <a href="#" class="btn btn-dark">Read More</a>
+                            <p>Whether your primary goal is to lose fat or to build more muscle, a personalized nutrition plan is the best way to get there.</p>
+                            <a href="#learn-nutrition" class="btn btn-dark">
+                                <i class="fa-solid fa-circle-chevron-down"></i> Read More</a>
                         </div>
                     </div>
                 </div>
@@ -99,8 +101,9 @@
                                 <i class="fa-solid fa-heart-pulse"></i>
                             </div>
                             <h3>Coaching</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, accusamus quae? Corporis quam accusantium inventore.</p>
-                            <a href="#" class="btn btn-info">Read More</a>
+                            <p>Looking for a complete long-term solution utilizing both exercise and diet to build a better you? Coaching would be right for you.</p>
+                            <a href="#learn-coaching" class="btn btn-info">
+                                <i class="fa-solid fa-circle-chevron-down"></i> Read More</a>
                         </div>
                     </div>
                 </div>
@@ -118,9 +121,7 @@
                     <h2>Personalized Training Programs</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, animi rerum necessitatibus ipsum tempore quos?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore dignissimos facilis voluptatibus aliquid error!</p>
-                    <a href="#" class="btn btn-dark mt-3">
-                        <i class="fa-solid fa-chevron-right"></i> Get Started
-                    </a>
+                    <a href="#" class="btn btn-dark mt-3">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -133,9 +134,7 @@
                     <h2>Macro-Based Nutrition Plans</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, animi rerum necessitatibus ipsum tempore quos?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore dignissimos facilis voluptatibus aliquid error!</p>
-                    <a href="#" class="btn btn-light mt-3">
-                        <i class="fa-solid fa-chevron-right"></i> Get Started
-                    </a>
+                    <a href="#" class="btn btn-light mt-3">Sign Up</a>
                 </div>
                 <div class="col-md">
                     <img src="img/undraw_diet.svg" class="img-fluid" alt="Illustrated image of a couple having dinner">
@@ -154,13 +153,117 @@
                     <h2>Complete 1-on-1 Coaching</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, animi rerum necessitatibus ipsum tempore quos?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta labore dignissimos facilis voluptatibus aliquid error!</p>
-                    <a href="#" class="btn btn-dark mt-3">
-                        <i class="fa-solid fa-chevron-right"></i> Get Started
-                    </a>
+                    <a href="#" class="btn btn-dark mt-3">Sign Up</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Q/A Accordion -->
+    <section class="p-5 bg-info" id="questions">
+        <div class="container justify-content-between">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-1">
+                    How do I know one of your training programs will work for me?
+                    </button>
+                    </h2>
+                    <div id="question-1" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Before a training program is assigned, you will answer a series of questions that will help us design a plan that is tailored specifically for <strong>YOU</strong> based on factors such as gender, age, lifestyle, activity level, and how much time you are able to dedicate to training.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-2">
+                        Will your nutrition plans work for me if I have dietary restrictions?
+                        </button>
+                    </h2>
+                    <div id="question-2" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body"><strong>YES.</strong> During your introductory assessment, factors such as dietary restrictions, allergies, etc., will be taken into account. Furthermore, since the nutrition plans are macro-nutrient based, this means you can eat anything you want as long as it fits your daily intake goals.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-3">
+                        Do I have to enter a contract or sign up for a subscription?
+                        </button>
+                    </h2>
+                    <div id="question-3" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body"><strong>NO.</strong> All of our training programs and nutrition plans are purchased on a one-time basis. If you choose to enter into an ongoing 1-on-1 coaching program, you will pay a monthly fee until you exit the program. However, there is no automatic billing, and you can cancel any time before the next month begins.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-4">
+                        How do I get started?
+                        </button>
+                    </h2>
+                    <div id="question-4" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">It's easy! Simply click <a href="#" class="text-decoration-none"><strong>GET STARTED</strong></a> above and fill out the form to let us know which program you are interested in, and we will get back to you with everything you need.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-light position-relative">
+        <div class="container">
+            <p class="lead px-2">Copyright &copy; 2022 Matt Neary PT - All Rights Reserved </p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5 btn">
+                <i class="fa-solid fa-circle-chevron-up" id="back-to-top"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Enrollment Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-dark">
+                <p class="lead">Fill out this form, and we will get back to you.</p>
+                <form action="mailto:contact@matthewneary.com" method="post">
+                    <div class="mb-3">
+                        <label for="first-name" class="col-form-label">
+                            First Name:
+                        </label>
+                        <input type="text" class="form-control" id="first-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last-name" class="col-form-label">
+                            Last Name:
+                        </label>
+                        <input type="text" class="form-control" id="last-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">
+                            Email Address:
+                        </label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="plans">
+                            Your Desired Plan:
+                        </label>
+                        <br>
+                        <select name="plans" id="plans">
+                            <option value="Training Program">Training Program</option>
+                            <option value="Nutrition Plan">Nutrition Plan</option>
+                            <option value="1-on-1 Coaching">1-on-1 Coaching</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-dark"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
