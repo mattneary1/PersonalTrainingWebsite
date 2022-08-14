@@ -33,6 +33,10 @@ input {
     box-shadow: inherit;
 }
 
+footer .container p {
+    font-size: 16px;
+}
+
 select {
     width: 100%;
     height: 40px;
@@ -43,6 +47,14 @@ select {
     color: #f8f9fa;
 }
 
+@media (max-width: 767px) {
+    body {
+        margin: auto -25px;
+    }
+    .navbar {
+        margin-right: 25px;
+    }
+}
 @media (min-width: 768px) {
     .news-input {
         width: 50%;
