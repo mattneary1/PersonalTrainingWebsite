@@ -8,6 +8,10 @@ body::before {
     filter: invert(50%) sepia(87%) saturate(454%) hue-rotate(140deg) brightness(88%) contrast(87%);
 }
 
+h2, h3, p {
+    margin-bottom: 30px;
+}
+
 input {
     margin-right: 10px;
 }
@@ -59,7 +63,7 @@ select {
         margin: auto 30px;
     }
     #showcase-image {
-        margin-top: 10px;
+        margin-top: 25px;
         height: 80px;
     }
 }
