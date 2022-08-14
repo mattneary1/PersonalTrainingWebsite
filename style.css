@@ -55,9 +55,6 @@ select {
     body {
         margin: auto -25px;
     }
-    .navbar button {
-        margin-right: 25px;
-    }
     #main-title-text {
         margin: auto 30px;
     }
