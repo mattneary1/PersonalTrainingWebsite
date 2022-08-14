@@ -4,6 +4,10 @@ body::before {
     height: 60px;
 }
 
+#showcase-image {
+    filter: invert(50%) sepia(87%) saturate(454%) hue-rotate(140deg) brightness(88%) contrast(87%);
+}
+
 input {
     margin-right: 10px;
 }
@@ -51,8 +55,15 @@ select {
     body {
         margin: auto -25px;
     }
-    .navbar {
+    .navbar button {
         margin-right: 25px;
+    }
+    #main-title-text {
+        margin: auto 30px;
+    }
+    #showcase-image {
+        margin-top: 10px;
+        height: 80px;
     }
 }
 @media (min-width: 768px) {
