@@ -72,7 +72,7 @@ select {
         margin: auto 30px;
     }
     #showcase-image {
-        margin-top: 25px;
+        margin: 25px auto;
         height: 80px;
     }
     .modal {
