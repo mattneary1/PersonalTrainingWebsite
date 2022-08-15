@@ -59,7 +59,7 @@
                 <div class="input-group news-input">
                     <input type="text" class="form-control" placeholder="Enter Email">
                     <div class="input-group-append">
-                      <button class="btn btn-dark btn-lg" type="button">Submit</button>
+                      <button class="btn btn-dark btn-lg" type="button" onclick="location.reload();">Submit</button>
                     </div>
                 </div>
             </div>
@@ -223,31 +223,31 @@
             </div>
             <div class="modal-body text-dark">
                 <p class="lead">Fill out this form, and we will get back to you.</p>
-                <form action="mailto:contact@matthewneary.com" method="post">
+                <form action="https://formspree.io/f/mvoyowdz" method="post">
                     <div class="mb-3">
                         <label for="first-name" class="col-form-label">
                             First Name:
                         </label>
-                        <input type="text" class="form-control" id="first-name">
+                        <input type="text" class="form-control" id="first-name" name="first-name">
                     </div>
                     <div class="mb-3">
                         <label for="last-name" class="col-form-label">
                             Last Name:
                         </label>
-                        <input type="text" class="form-control" id="last-name">
+                        <input type="text" class="form-control" id="last-name" name="last-name">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="col-form-label">
                             Email Address:
                         </label>
-                        <input type="text" class="form-control" id="email">
+                        <input type="text" class="form-control" id="email" name="email">
                     </div>
                     <div class="mb-3">
-                        <label for="plans">
+                        <label for="plan">
                             Your Desired Plan:
                         </label>
                         <br>
-                        <select name="plans" id="plans">
+                        <select name="plan" id="plan">
                             <option value="Training Program">Training Program</option>
                             <option value="Nutrition Plan">Nutrition Plan</option>
                             <option value="1-on-1 Coaching">1-on-1 Coaching</option>
