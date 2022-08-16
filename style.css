@@ -1,11 +1,12 @@
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 body::before {
     display: block;
     content: '';
     height: 50px;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 #showcase-image {
@@ -18,6 +19,10 @@ h2, h3, p {
 
 input {
     margin-right: 10px;
+}
+
+.container2 {
+    overflow-x: hidden;
 }
 
 .accordion-button {
@@ -60,14 +65,14 @@ select {
 }
 
 @media (max-width: 767px) {
-    body {
-        margin: auto -25px;
-    }
     nav a {
         text-align: center;
     }
     h1 {
         margin-top: 30px;
+    }
+    .card, #learn-training, #learn-nutrition, #learn-coaching, .accordion-item {
+        margin: auto -25px;
     }
     #newsletter-title {
         font-size: 18px;
