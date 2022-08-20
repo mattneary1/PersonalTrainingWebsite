@@ -7,7 +7,8 @@ html, body, nav {
 body::before {
     display: block;
     content: '';
-    height: 50px;
+    height: 60px;
+    background-color: #292b2c;
 }
 
 #showcase-image {
@@ -65,7 +66,7 @@ select {
     color: #f8f9fa;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     nav a {
         text-align: center;
     }
