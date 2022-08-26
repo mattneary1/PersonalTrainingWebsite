@@ -1,3 +1,3 @@
 # personalTrainingWebsite
 
-A personal training website I am building with Bootstrap 5. In progress.
+A personal training website built with Bootstrap 5 using CSS and JavaScript components.
